@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/semantic.min.css"> 
+    <title>CSS GRID!</title>
+</head>
+<body>
+   <div class="site">
+    <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+    <header class="masthead">
+        <h2 class="site-title">Ejemplo de uso de GridCss</h2>
+    </header><!-- .masthead -->
+
+    <main id="content" class="main-content">
+        <h2>Titulo secundario del contenido principal</h2>
+        <p>The main content area is where the magic happens. Right now, the main content is on the left and the sidebar is on the right. If you go into the markup for this document and add <code>dir="rtl"</code> to the <code>html</code> element, the two elements will swap spaces because CSS Grid honors text direction.</p>
+
+        <form class="ui form">
+          <div class="field">
+            <label>First Name</label>
+            <input type="text" name="first-name" placeholder="First Name">
+          </div>
+          <div class="field">
+            <label>Last Name</label>
+            <input type="text" name="last-name" placeholder="Last Name">
+          </div>
+          <div class="field">
+            <div class="ui checkbox">
+              <input type="checkbox" tabindex="0" class="hidden">
+              <label>I agree to the Terms and Conditions</label>
+            </div>
+          </div>
+          <button class="ui button" type="submit">Submit</button>
+        </form>    
+
+      </main>
+    <aside class="sidebar">
+        <h3>Esto es una sidebar</h3>
+        <p>The sidebar typically contains things like:</p>
+        <ul>
+            <li>Links</li>
+            <li>Menus</li>
+            <li>Ads</li>
+        </ul>
+    </aside>
+
+    <aside class="twin">
+        This should take up half the space
+    </aside>
+    <aside class="twin">
+        This should take up the other half of the space
+    </aside>
+
+    <footer class="colophon grid">
+        <aside>Content, layout, design: <a href="https://twitter.com/mor10" target="_blank" rel="nofollow">Morten Rand-Hendriksen</a>.</aside>
+    </footer>
+
+</div>
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<script src="js/semantic.min.js"></script>
+</body>
+</html>
